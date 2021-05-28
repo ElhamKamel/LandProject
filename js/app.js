@@ -58,17 +58,6 @@ const addActiveClassToSection = function (section) {
     section.classList.add('your-active-class');
 }
 
-// Switch Classes for Nav Bar
-//const handleNavBarActiveState = function (section_id) {
-    //const navBarListItemsAnchors = document.querySelectorAll('.menu__link');
-    //for (let i = 0 ; i < navBarListItemsAnchors.length ; i++) {
-    //    navBarListItemsAnchors[i].classList.remove('navbar__active');
-    //    if (navBarListItemsAnchors[i].getAttribute("li_href") == '#' + section_id) {
-
-    //        navBarListItemsAnchors[i].classList.add('navbar__active');
-    //    }
-    //}
-//}
 
 // Active the section in the viewport
 // Add class 'active' to section when near top of viewport
@@ -83,7 +72,7 @@ const handleSectionsActiveState = function () {
 
         }
     });
-    //handleNavBarActiveState(activeSectionID);
+    
 }
 
 window.addEventListener('scroll', handleSectionsActiveState);
@@ -117,8 +106,4 @@ const scrollTo = function (e) {
 createMenuBar();
 
 
-
-// Scroll to section on link click
-
-// Set sections as active
 
